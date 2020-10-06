@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HTML5 CSS3 Bootstrap4 JavaScript PHP MySQL
+    Font Awesome" />
+    <meta name="author" content="Егоров Дмитрий" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <title>HTML5 CSS3 Bootstrap4 JavaScript PHP MySQL
+        Font Awesome</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center mt-5 mb-5">
+                        <h2>HTML5 CSS3 Bootstrap4 JavaScript PHP MySQL
+                            Font Awesome</h2>
+                        <p>API для приема контактных данных клиентов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="text-center mt-3">Ввести контактные данные</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-source-id">ID источника контактов:</label>
+                        <select class="custom-select" id="contact-source-id" name="contact-source-id">
+                            <option value="1" selected="">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-name">Имя:</label>
+                        <input type="text" class="form-control" placeholder="Имя" id="contact-name" name="contact-name">
+                        <p class="text-danger" id="error-name"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-phone">Телефон:</label>
+                        <input type="number" class="form-control" placeholder="Телефон" id="contact-phone"
+                            name="contact-phone">
+                        <p class="text-danger" id="error-phone"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Почта:</label>
+                        <input type="email" class="form-control" placeholder="Почта" id="contact-email"
+                            name="contact-email">
+                        <p class="text-danger" id="error-email"></p>
+                    </div>
+                    <div id="contact-message-block"></div>
+                    <button id="contact-form-button" type="submit" class="btn btn-outline-dark">Отправить</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <h2 class="mt-3 mb-3 text-center">Поиск клиентов по номеру телефону:</h2>
+            <form id="search-for-clients-form">
+                <div class="form-group">
+                    <label for="search-for-clients-by-phone">Номер телефона:</label>
+                    <input type="number" class="form-control" placeholder="Номер телефона"
+                        id="search-for-clients-by-phone" name="search-for-clients-by-phone">
+                </div>
+            </form>
+            <div id="search-for-clients-by-phone-message-block"></div>
+            <div id="search-for-clients-by-phone-list"></div>
+        </div>
+    </main>
+    <footer id=" footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-copyright text-center mt-4 pb-3">&copy; 2020 Автор проекта: Егоров Дмитрий
+                        <a href="https://www.djorian.com" target="_blank">djorian.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
